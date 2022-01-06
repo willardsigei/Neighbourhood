@@ -15,7 +15,10 @@ urlpatterns = [
     path('create/profile', views.create_profile, name='create-profile'),
     path('update/profile', views.update_profile, name='update-profile'),
     path('authorities', views.authorities, name='authorities'),
-
+    path('health', views.health, name='health'),
+    path('post',views.post, name='post'),
+    path('new/post', views.new_post, name='new-post'),
+    path('search', views.search_results, name='search_results')
 ]
 
 if settings.DEBUG:
