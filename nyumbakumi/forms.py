@@ -17,3 +17,7 @@ class ProfileForm(forms.ModelForm):
         model=Profile
         exclude=['username']
 
+class PostForm(forms.ModelForm):
+    class Meta:
+        model= Post
+        exclude=['username','neighbourhood','avatar']        
